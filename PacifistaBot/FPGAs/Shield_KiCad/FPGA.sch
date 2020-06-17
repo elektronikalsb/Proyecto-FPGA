@@ -1,0 +1,421 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L FPGA-rescue:BorneroInterruptor-FPGA J1
+U 1 1 5E3C1683
+P 3800 1400
+F 0 "J1" H 3775 1425 50  0000 L CNN
+F 1 "BorneroInterruptor" H 3600 1350 50  0000 L CNN
+F 2 "FPGA:Bornero Interruptor" H 3800 1400 50  0001 C CNN
+F 3 "" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-cache:Conn_01x03 J10
+U 1 1 5E3C211D
+P 3300 1550
+F 0 "J10" V 3400 1600 50  0000 R CNN
+F 1 "BATT" V 3500 1625 50  0000 R CNN
+F 2 "FPGA:Header1x03" H 3300 1550 50  0001 C CNN
+F 3 "" H 3300 1550 50  0001 C CNN
+	1    3300 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PCB_pacifista-cache:Conn_01x03 J11
+U 1 1 5E3C2DEC
+P 3300 2250
+F 0 "J11" V 3400 2300 50  0000 R CNN
+F 1 "BATT" V 3475 2350 50  0000 R CNN
+F 2 "FPGA:Header1x03" H 3300 2250 50  0001 C CNN
+F 3 "" H 3300 2250 50  0001 C CNN
+	1    3300 2250
+	0    -1   1    0   
+$EndComp
+$Comp
+L PCB_pacifista-cache:GND #PWR0101
+U 1 1 5E3C3B4A
+P 3025 1900
+F 0 "#PWR0101" H 3025 1650 50  0001 C CNN
+F 1 "GND" V 3030 1772 50  0000 R CNN
+F 2 "" H 3025 1900 50  0001 C CNN
+F 3 "" H 3025 1900 50  0001 C CNN
+	1    3025 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L PCB_pacifista-cache:Step_down_chino U1
+U 1 1 5E3C48BB
+P 5125 1800
+F 0 "U1" H 5125 2237 60  0000 C CNN
+F 1 "BUCK" H 5125 2131 60  0000 C CNN
+F 2 "FPGA:BUCK" H 5125 1850 60  0001 C CNN
+F 3 "" H 5125 1850 60  0001 C CNN
+	1    5125 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-cache:GND #PWR0102
+U 1 1 5E3C5641
+P 4500 1650
+F 0 "#PWR0102" H 4500 1400 50  0001 C CNN
+F 1 "GND" V 4505 1522 50  0000 R CNN
+F 2 "" H 4500 1650 50  0001 C CNN
+F 3 "" H 4500 1650 50  0001 C CNN
+	1    4500 1650
+	0    1    1    0   
+$EndComp
+$Comp
+L PCB_pacifista-cache:GND #PWR0103
+U 1 1 5E3C5ED7
+P 5750 1650
+F 0 "#PWR0103" H 5750 1400 50  0001 C CNN
+F 1 "GND" V 5755 1522 50  0000 R CNN
+F 2 "" H 5750 1650 50  0001 C CNN
+F 3 "" H 5750 1650 50  0001 C CNN
+	1    5750 1650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5750 1900 2    50   Input ~ 0
+5V
+Wire Wire Line
+	3200 1750 3200 1900
+Wire Wire Line
+	3025 1900 3200 1900
+Connection ~ 3200 1900
+Wire Wire Line
+	3200 1900 3200 2050
+Wire Wire Line
+	3300 1750 3300 1900
+Wire Wire Line
+	3300 1900 3750 1900
+Wire Wire Line
+	3750 1900 3750 1750
+Connection ~ 3300 1900
+Wire Wire Line
+	3300 1900 3300 2050
+Wire Wire Line
+	3850 1750 3850 1900
+Wire Wire Line
+	3850 1900 4575 1900
+Wire Wire Line
+	4575 1650 4500 1650
+Wire Wire Line
+	5675 1650 5750 1650
+Wire Wire Line
+	5750 1900 5675 1900
+$Comp
+L PCB_pacifista-cache:CP C1
+U 1 1 5E3C9710
+P 6375 1750
+F 0 "C1" H 6493 1796 50  0000 L CNN
+F 1 "1000uF 25V" H 6493 1705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P3.80mm" H 6413 1600 50  0001 C CNN
+F 3 "" H 6375 1750 50  0001 C CNN
+	1    6375 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6375 1450 1    50   Input ~ 0
+5V
+$Comp
+L PCB_pacifista-cache:GND #PWR0104
+U 1 1 5E3CA11B
+P 6375 2050
+F 0 "#PWR0104" H 6375 1800 50  0001 C CNN
+F 1 "GND" H 6380 1877 50  0000 C CNN
+F 2 "" H 6375 2050 50  0001 C CNN
+F 3 "" H 6375 2050 50  0001 C CNN
+	1    6375 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 1450 6375 1600
+Wire Wire Line
+	6375 1900 6375 2050
+NoConn ~ 3400 1750
+NoConn ~ 3400 2050
+$Comp
+L PCB_pacifista-cache:GND #PWR0105
+U 1 1 5E3CB356
+P 3300 3325
+F 0 "#PWR0105" H 3300 3075 50  0001 C CNN
+F 1 "GND" H 3305 3152 50  0000 C CNN
+F 2 "" H 3300 3325 50  0001 C CNN
+F 3 "" H 3300 3325 50  0001 C CNN
+	1    3300 3325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3125 3325 3200 3325
+Wire Wire Line
+	3200 3325 3200 3150
+Wire Wire Line
+	3300 3150 3300 3325
+$Comp
+L FPGA-rescue:BorneroUSB-FPGA J2
+U 1 1 5E3CC161
+P 3250 2900
+F 0 "J2" H 3200 3025 50  0000 L CNN
+F 1 "BorneroUSB" H 3050 2950 50  0000 L CNN
+F 2 "FPGA:Bornero USB" H 3250 3050 50  0001 C CNN
+F 3 "" H 3250 3050 50  0001 C CNN
+	1    3250 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3125 3325 0    50   Input ~ 0
+5V
+$Comp
+L FPGA-rescue:FPGA-FPGA F1
+U 1 1 5E3CD055
+P 4625 2800
+F 0 "F1" H 4575 3465 50  0000 C CNN
+F 1 "Shield FPGA" H 4575 3374 50  0000 C CNN
+F 2 "FPGA:Shield" H 4625 2850 50  0001 C CNN
+F 3 "" H 4625 2850 50  0001 C CNN
+	1    4625 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-cache:GND #PWR0106
+U 1 1 5E3CE7A9
+P 3875 2900
+F 0 "#PWR0106" H 3875 2650 50  0001 C CNN
+F 1 "GND" V 3880 2772 50  0000 R CNN
+F 2 "" H 3875 2900 50  0001 C CNN
+F 3 "" H 3875 2900 50  0001 C CNN
+	1    3875 2900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3875 2900 4025 2900
+NoConn ~ 4025 2600
+NoConn ~ 4025 2700
+NoConn ~ 4025 2800
+NoConn ~ 4025 3100
+NoConn ~ 4025 3200
+NoConn ~ 4025 3300
+NoConn ~ 4025 3400
+NoConn ~ 4025 3500
+NoConn ~ 4025 3600
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J3
+U 1 1 5E3D04DC
+P 5325 2600
+F 0 "J3" H 5405 2592 50  0000 L CNN
+F 1 "ServoSignal" H 5405 2501 50  0000 L CNN
+F 2 "FPGA:Header1x06" H 5325 2600 50  0001 C CNN
+F 3 "" H 5325 2600 50  0001 C CNN
+	1    5325 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J4
+U 1 1 5E3D1462
+P 5325 3200
+F 0 "J4" H 5405 3192 50  0000 L CNN
+F 1 "ServoSignal" H 5405 3101 50  0000 L CNN
+F 2 "FPGA:Header1x06" H 5325 3200 50  0001 C CNN
+F 3 "" H 5325 3200 50  0001 C CNN
+	1    5325 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J9
+U 1 1 5E3D1E9E
+P 5975 3700
+F 0 "J9" H 6055 3692 50  0000 L CNN
+F 1 "Bluetooth" H 6055 3601 50  0000 L CNN
+F 2 "FPGA:Header1x06" H 5975 3700 50  0001 C CNN
+F 3 "" H 5975 3700 50  0001 C CNN
+	1    5975 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5775 3500
+NoConn ~ 5775 4000
+$Comp
+L PCB_pacifista-cache:GND #PWR0107
+U 1 1 5E3D5470
+P 5525 3875
+F 0 "#PWR0107" H 5525 3625 50  0001 C CNN
+F 1 "GND" H 5530 3702 50  0000 C CNN
+F 2 "" H 5525 3875 50  0001 C CNN
+F 3 "" H 5525 3875 50  0001 C CNN
+	1    5525 3875
+	1    0    0    -1  
+$EndComp
+Text GLabel 5775 3900 0    50   Input ~ 0
+5V
+Wire Wire Line
+	5525 3875 5525 3800
+Wire Wire Line
+	5525 3800 5775 3800
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J5
+U 1 1 5E3D6B86
+P 6950 2625
+F 0 "J5" H 7125 2625 50  0000 C CNN
+F 1 "Servo+" H 7200 2525 50  0000 C CNN
+F 2 "FPGA:Header1x06" H 6950 2625 50  0001 C CNN
+F 3 "" H 6950 2625 50  0001 C CNN
+	1    6950 2625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J6
+U 1 1 5E3D8E12
+P 6950 3275
+F 0 "J6" H 7125 3275 50  0000 C CNN
+F 1 "Servo+" H 7200 3200 50  0000 C CNN
+F 2 "FPGA:Header1x06" H 6950 3275 50  0001 C CNN
+F 3 "" H 6950 3275 50  0001 C CNN
+	1    6950 3275
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J7
+U 1 1 5E3DBE07
+P 7600 2625
+F 0 "J7" H 7275 2600 50  0000 C CNN
+F 1 "ServoGND" H 7175 2500 50  0000 C CNN
+F 2 "FPGA:Header1x06" H 7600 2625 50  0001 C CNN
+F 3 "" H 7600 2625 50  0001 C CNN
+	1    7600 2625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L PCB_pacifista-rescue:Conn_01x06 J8
+U 1 1 5E3DBE0D
+P 7600 3275
+F 0 "J8" H 7275 3325 50  0000 C CNN
+F 1 "ServoGND" H 7150 3225 50  0000 C CNN
+F 2 "FPGA:Header1x06" H 7600 3275 50  0001 C CNN
+F 3 "" H 7600 3275 50  0001 C CNN
+	1    7600 3275
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3850 2025 3    50   Input ~ 0
+ALIM
+Wire Wire Line
+	3850 2025 3850 1900
+Connection ~ 3850 1900
+Text GLabel 7150 2275 1    50   Input ~ 0
+ALIM
+$Comp
+L PCB_pacifista-cache:CP C2
+U 1 1 5E3DD350
+P 7475 3875
+F 0 "C2" V 7550 4000 50  0000 C CNN
+F 1 "820uF 6.3V" V 7325 3925 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 7513 3725 50  0001 C CNN
+F 3 "" H 7475 3875 50  0001 C CNN
+	1    7475 3875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7150 2275 7150 2425
+Wire Wire Line
+	7150 3875 7325 3875
+Connection ~ 7150 2425
+Wire Wire Line
+	7150 2425 7150 2525
+Connection ~ 7150 2525
+Wire Wire Line
+	7150 2525 7150 2625
+Connection ~ 7150 2625
+Wire Wire Line
+	7150 2625 7150 2725
+Connection ~ 7150 2725
+Wire Wire Line
+	7150 2725 7150 2825
+Connection ~ 7150 2825
+Wire Wire Line
+	7150 2825 7150 2925
+Connection ~ 7150 2925
+Wire Wire Line
+	7150 2925 7150 3075
+Connection ~ 7150 3075
+Wire Wire Line
+	7150 3075 7150 3175
+Connection ~ 7150 3175
+Wire Wire Line
+	7150 3175 7150 3275
+Connection ~ 7150 3275
+Wire Wire Line
+	7150 3275 7150 3375
+Connection ~ 7150 3375
+Wire Wire Line
+	7150 3375 7150 3475
+Connection ~ 7150 3475
+Wire Wire Line
+	7150 3475 7150 3575
+Connection ~ 7150 3575
+Wire Wire Line
+	7150 3575 7150 3875
+Wire Wire Line
+	7800 2425 7800 2525
+Connection ~ 7800 2525
+Wire Wire Line
+	7800 2525 7800 2625
+Connection ~ 7800 2625
+Wire Wire Line
+	7800 2625 7800 2725
+Connection ~ 7800 2725
+Wire Wire Line
+	7800 2725 7800 2825
+Connection ~ 7800 2825
+Wire Wire Line
+	7800 2825 7800 2925
+Connection ~ 7800 2925
+Wire Wire Line
+	7800 2925 7800 3075
+Connection ~ 7800 3075
+Wire Wire Line
+	7800 3075 7800 3175
+Connection ~ 7800 3175
+Wire Wire Line
+	7800 3175 7800 3275
+Connection ~ 7800 3275
+Wire Wire Line
+	7800 3275 7800 3375
+Connection ~ 7800 3375
+Wire Wire Line
+	7800 3375 7800 3475
+Connection ~ 7800 3475
+Wire Wire Line
+	7800 3475 7800 3575
+$Comp
+L PCB_pacifista-cache:GND #PWR0108
+U 1 1 5E3DE63C
+P 7800 3875
+F 0 "#PWR0108" H 7800 3625 50  0001 C CNN
+F 1 "GND" H 7805 3702 50  0000 C CNN
+F 2 "" H 7800 3875 50  0001 C CNN
+F 3 "" H 7800 3875 50  0001 C CNN
+	1    7800 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3875 7625 3875
+Wire Wire Line
+	7800 3575 7800 3875
+Connection ~ 7800 3575
+Connection ~ 7800 3875
+Wire Wire Line
+	5125 3600 5775 3600
+Wire Wire Line
+	5125 3700 5775 3700
+$EndSCHEMATC

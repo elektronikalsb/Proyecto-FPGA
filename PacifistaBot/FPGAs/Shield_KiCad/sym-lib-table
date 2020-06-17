@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name PCB_pacifista-cache)(type Legacy)(uri C:/Users/jonat/Desktop/Practicas/PacifistaBot-master/pcb_files/PCB_pacifista-cache.lib)(options "")(descr ""))
+  (lib (name PCB_pacifista-rescue)(type Legacy)(uri C:/Users/jonat/Desktop/Practicas/PacifistaBot-master/pcb_files/PCB_pacifista-rescue.lib)(options "")(descr ""))
+  (lib (name FPGA-rescue)(type Legacy)(uri ${KIPRJMOD}/FPGA-rescue.lib)(options "")(descr ""))
+)
