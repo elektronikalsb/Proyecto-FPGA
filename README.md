@@ -17,7 +17,7 @@ Este Kit está pensado para todo aquel que quiera iniciarse en el montaje de rob
 
 Hay que destacar que el robot ha sido diseñado por OPRobots y han liberado las fuentes para que cualquiera pueda replicarlo, modificarlo o seguir desarrollándolo. Aunque su diseño inicial esté inspirado en los robots Pacifistas de la serie One Piece, el diseño es totalmente personalizable ya que tanto las manos y la cabeza, como los detalles decorativos de su pecho y piernas son totalmente modificables e intercambiables para conseguir un robot único.
 
-El robot pacifistabot originalmente se ha diseñado para controlado por bluetooth. Partiendo de la idea original se ha modificado creando una nueva versión en la que se puede elegir controlarlo mediante bluetooth o mediante wifi (los 2 a la vez no se puede). En la siguiente tabla se puede ver la documentación de cada versión de robot.
+El robot pacifistabot originalmente se ha diseñado para controlado por bluetooth. Partiendo de la idea original se ha modificado creando una nueva versión en la que se puede elegir controlarlo mediante bluetooth o mediante wifi (los 2 a la vez no se puede).
 
 Tambien se ha creado una app movil con la que poder controlarlo via Bluetooth.
 
